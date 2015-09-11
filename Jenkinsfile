@@ -3,4 +3,4 @@ node {
   checkout scm
   sh 'ls -l'
 }
-echo 'have some fixes'
+echo 'have some fixes
