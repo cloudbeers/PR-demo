@@ -1,1 +1,1 @@
-`error 'oops'`
+error 'oops'
