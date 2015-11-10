@@ -8,4 +8,4 @@ node {
 sleep 15
 echo 'Have some fixes!'
 stage 'Kick-off'
-triggerRemoteJob mode: [$class: 'TrackProgressAwaitResult', scheduledTimeout: [timeoutStr: ''], startedTimeout: [timeoutStr: ''], timeout: [timeoutStr: '1d'], whenFailure: [$class: 'StopAsFailure'], whenScheduledTimeout: [$class: 'ContinueAsIs'], whenStartedTimeout: [$class: 'ContinueAsIs'], whenTimeout: [$class: 'ContinueAsFailure'], whenUnstable: [$class: 'ContinueAsUnstable']], remotePathMissing: [$class: 'StopAsFailure'], remotePathUrl: 'cjp:///cje/org/multibranch-demo/master'
+triggerRemoteJob mode: [$class: 'TrackProgressAwaitResult', scheduledTimeout: [timeoutStr: ''], startedTimeout: [timeoutStr: ''], timeout: [timeoutStr: '1d'], whenFailure: [$class: 'StopAsFailure'], whenScheduledTimeout: [$class: 'ContinueAsIs'], whenStartedTimeout: [$class: 'ContinueAsIs'], whenTimeout: [$class: 'ContinueAsFailure'], whenUnstable: [$class: 'ContinueAsUnstable']], remotePathMissing: [$class: 'StopAsFailure'], remotePathUrl: 'cjp:///cje/org/PR-demo/master'
