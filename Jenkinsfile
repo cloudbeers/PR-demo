@@ -1,5 +1,5 @@
 #!groovy
-sleep 15
+sleep 14
 node {
   checkout scm
   sh 'ls -l'
