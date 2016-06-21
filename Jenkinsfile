@@ -5,4 +5,3 @@ node {
   sh 'ls -l'
 }
 sleep 5
-echo 'Have some quick fixes…'
