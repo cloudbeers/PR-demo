@@ -1,4 +1,3 @@
-#!groovy
 node {
   stage 'stage1'
   sleep 14
