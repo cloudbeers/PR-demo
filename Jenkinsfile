@@ -1,7 +1,6 @@
-#!groovy
-sleep 15
+@Library('github.com/jglick/sample-pipeline-library@b3acaf4')
 node {
   checkout scm
-  sh 'ls -l'
+  echo "current file: ${readFile 'file'}"
+  echo "changed since the last build? ${currentBuildExt().hasChangeIn('file')}"
 }
-sleep 15
