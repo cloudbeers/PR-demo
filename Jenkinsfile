@@ -1,4 +1,3 @@
-#!groovy
 sleep 15
 node {
   checkout scm
