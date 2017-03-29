@@ -1,6 +1,2 @@
-sleep 15
-node {
-  checkout scm
-  sh 'ls -l'
-}
-sleep 15
+properties([buildDiscarder(logRotator(numToKeepStr: CHANGE_AUTHOR == 'jglick' ? '3' : '1')), parameters([string(name: 'message', defaultValue: 'Who knows?')])])
+echo params.message
