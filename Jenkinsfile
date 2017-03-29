@@ -1,6 +1,9 @@
-sleep 15
-node {
-  checkout scm
-  sh 'ls -l'
+stage('Prompt') {
+  input 'Ready?'
 }
-sleep 15
+stage('Run') {
+  node {
+    checkout scm
+    sh 'cat content.txt'
+  }
+}
