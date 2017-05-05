@@ -1,6 +1,6 @@
 sleep 15
 node {
   checkout scm
-  sh 'ls -l'
+  isUnix() ? sh('ls -l') : bat('dir')
 }
 sleep 15
