@@ -1,5 +1,5 @@
 stage('before') {
-  sleep 1
+  sleep 2
 }
 stage('main') {
   node {
@@ -8,5 +8,5 @@ stage('main') {
   }
 }
 stage('after') {
-  sleep 1
+  sleep 2
 }
