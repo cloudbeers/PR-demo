@@ -1,6 +1,12 @@
-sleep 1
-node {
-  checkout scm
-  isUnix() ? sh('ls -l') : bat('dir')
+stage('before') {
+  sleep 1
 }
-sleep 1
+stage('main') {
+  node {
+    checkout scm
+    isUnix() ? sh('ls -l') : bat('dir')
+  }
+}
+stage('after') {
+  sleep 1
+}
