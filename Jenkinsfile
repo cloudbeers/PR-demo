@@ -1,3 +1,4 @@
+stage('pre') {}
 sleep 5
 node {
   checkout scm
